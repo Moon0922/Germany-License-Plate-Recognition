@@ -1,15 +1,15 @@
-# DeutschLicensePlateRecognition
+# Deutsch License Plate Recognition
  This is a Deutsch License Plate Recognition vs2022 project.
 
  ## Prerequisites
 - Visual Studio 2022
-- opencv
-- cximage
+- OpenCV
+- CxImage
 
  ## Features
 
-- License plate recognition engine is built in vs2022
-- License plate recognition engine is built with only C++ and didn't use any third-party libraries.
+- The license plate recognition engine is built in vs2022
+- The license plate recognition engine is built with only C++ and doesn't use any third-party libraries.
 - Its accuracy is over 98%.
 
 ![more5](result/result.png)
