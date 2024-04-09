@@ -1,5 +1,5 @@
 # Deutsch License Plate Recognition
- This is a Deutsch License Plate Recognition vs2022 project.
+ This is a Germany License Plate Recognition VS2022 project.
 
  ## Prerequisites
 - Visual Studio 2022
