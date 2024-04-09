@@ -15,8 +15,8 @@
 ![more5](result/result.png)
 
 ## Libraries
-- [cximage](https://archive.org/download/third-party-libraries/cximage.zip)
-- [opencv](https://archive.org/download/third-party-libraries/opencv.zip)
+- [CxImage](https://archive.org/download/third-party-libraries/cximage.zip)
+- [OpenCV](https://archive.org/download/third-party-libraries/opencv.zip)
 
 ## Application 
 - [Deutsch-License-Plate-Recognition](https://archive.org/download/deutsch-license-plate-recognition/Deutsch-License-Plate-Recognition.zip)
