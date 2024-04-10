@@ -205,12 +205,9 @@ void CEngineProcessor::StillImage(int index)
 	Mat gray;
 	cvtColor(mImage, gray, COLOR_BGR2GRAY);
 
-	InitSet iniSet;
-	memset(&iniSet, 0, sizeof(InitSet));
-	iniSet.skewAng = 0;
-	CARPLATE_DATA	carData;
+	CARPLATEDATA	carData;
 	int pTime = (int)clock();
-	int nPlateNum = DELPR_EngineProcess(m_hEngineHandle, gray.data, gray.cols, gray.rows, &iniSet, &carData);
+	int nPlateNum = DELPR_EngineProcess(m_hEngineHandle, gray.data, gray.cols, gray.rows, &carData);
 	pTime = (int)clock() - pTime;
 
 	CString temp;
@@ -221,7 +218,7 @@ void CEngineProcessor::StillImage(int index)
 	{
 		CString strConf;
 		CString lprResult = CString(carData.pPlate[0].szLicense, strlen(carData.pPlate[0].szLicense));
-		strConf.Format(_T("%.2f"), carData.pPlate[0].nTrust);
+		strConf.Format(_T("%.2f"), carData.pPlate[0].fTrust);
 		m_wndListCtrl->SetItemText(index, 4, strConf + _T("%"));
 		m_wndListCtrl->SetItemText(index, 2, lprResult);
 	}

@@ -170,13 +170,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>../opencv/include;../cximage/include;../DELPREngine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)opencv\include;$(SolutionDir)cximage\include;$(SolutionDir)DELPREngine</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>../cximage/lib;../opencv/lib;../DELPREngine;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)cximage\lib;$(SolutionDir)opencv\lib;$(SolutionDir)DELPREngine</AdditionalLibraryDirectories>
       <AdditionalDependencies>opencv_world490.lib;cximagecrt.lib;DELPREngine.lib;</AdditionalDependencies>
     </Link>
     <Midl>

@@ -25,7 +25,7 @@ public:
 	void	InitView(COLORREF dwColor = COLOR_BLACK);
 	BOOL	UpdateView();
 	void	SetImage(HBITMAP hBitmap);
-	void	SetImage(HBITMAP hBitmap, CARPLATE_DATA carData);
+	void	SetImage(HBITMAP hBitmap, CARPLATEDATA carData);
 	void	DrawBackground(CDC* pDC);
 	void	DrawImage(CDC* pDC);
 	void	DrawRectangle(CDC* pDC);
@@ -38,7 +38,7 @@ public:
 	COLORREF m_dwColor;
 	HBITMAP	m_hBitmap;
 	BITMAP	m_bInfo;
-	CARPLATE_DATA m_carPlateData;
+	CARPLATEDATA m_carPlateData;
 	int		m_LPRCount;
 	float	m_fScale;
 	int     m_nScaleW;
